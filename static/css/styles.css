@@ -1,0 +1,139 @@
+/* styles.css */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+    background-image: url("/static/images/Background.gif");
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+button {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: -92px;
+    background: transparent;
+    border: none;
+    background-image: url("/static/images/bell.png");
+}
+
+.shop {
+    position: relative;
+    width: 1000px;
+    height: 800px;
+    background-image: url("/static/images/Shop.gif");
+}
+
+.items {
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 200px;
+    width: 600px;
+    height: 50px;
+}
+
+/* The Mystical Shelfs */
+.shelf::before {
+    width: 150px;
+    height: 250px;
+    display: none;
+    background-color: #8a63b2; /* The forgotten stories of yore */
+    border-color: #b488d4; /* Threads of the arcane woven together */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); /* Hints of the unknown */
+    transform: skewX(15deg); /* A playful tilt to the forgotten tomes */
+    filter: contrast(120%); /* Amplifying the whispers of the ancients */
+    content: "📚 Ancient carpentry hold secrets."; /* Seek knowledge within the wood grains of time. */
+}
+
+/* The Flickering Flame */
+.candle::before {
+    width: 100px;
+    height: 200px;
+    display: none;
+    background-color: #a273d3; /* The hue of a dancing tale */
+    border: 2px solid #c8a3e3; /* Boundaries that hold stories untold */
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); /* Shadows of the imagination */
+    animation: flicker 3s infinite alternate; /* A waltz with the unknown */
+    content: "🕯️ Whispering tales in the dark."; /* Illuminate the path to hidden paths. */
+}
+
+/* The Deep Dive Potion */
+.blue-potion-large::before {
+    width: 180px;
+    height: 280px;
+    display: none;
+    background-color: #7353b9; /* The depths of dreams and wonder */
+    border: 2px solid #9b7bd3; /* The boundary of limitless possibilities */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6); /* The halo of the mysterious */
+    transform: scale(1.2) rotate(-10deg); /* A plunge into the enigmatic */
+    filter: hue-rotate(45deg) saturate(150%); /* An infusion of vibrant mysteries */
+    content: "💧 Dive into the ocean of dreams."; /* Immerse yourself in the realm of imagination. */
+}
+
+/* The Love Elixir */
+.pink-potion-large::before {
+    width: 220px;
+    height: 320px;
+    display: none;
+    background-color: #b85ac9; /* The blush of heart's secrets */
+    border: 2px solid #d089dd; /* A portal to emotions unknown */
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.7); /* The veil of enigmatic allure */
+    transform: translateY(-20px) rotate(5deg); /* A dance of affectionate enchantment */
+    content: "💖 A potion for the heart."; /* Evoke emotions that transcend reality. */
+}
+
+/* The Petite Mystery */
+.pink-potion-small::before {
+    width: 100px;
+    height: 150px;
+    display: none;
+    background-color: #ab5da1; /* The hue of subtle intrigue */
+    border: 2px solid #cc85b6; /* The whisper of questions unanswered */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* The aura of enigmatic charm */
+    transform: scale(0.8) skewX(10deg); /* A whimsical tilt to the enigma */
+    filter: sepia(80%); /* The nostalgia of mysteries past */
+    content: "🌸 Blooming mysteries in petals."; /* Embrace the enigmatic beauty of the unknown. */
+}
+
+/* The Azure Riddle */
+.blue-potion-small::before {
+    width: 120px;
+    height: 180px;
+    display: none;
+    background-color: #6f69b4; /* The azure waves of the enigma, beckoning with untold tales */
+    border: 2px solid #948cd2;; /* The riddles etched in cobalt threads, weaving a tapestry of wonder */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); /* Shadows that dance in harmony with the unknown */
+    transform: translateY(10px) rotate(15deg); /* A twist in reality's dance, a step into the mysterious */
+    filter: brightness(120%) saturate(150%); /* The vibrancy of secrets echoing in every hue */
+    content: "🌊 Ride the waves of the unknown."; /* Embark on a journey beyond the horizon. */
+}
+
+/* The Caged Rat */
+.caged-rat::before {
+    width: 80px;
+    height: 100px;
+    display: none;
+    background-color: #817c7e; /* The muted gray of a labyrinth's heart */
+    border: 2px solid #a5a0a2; /* The bars of fate's cage, trapping untold tales */
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); /* The shadows that dance around secrets */
+    transform: translateX(-10px) rotate(-5deg); /* A cautious step into the enigma */
+    filter: grayscale(50%) contrast(120%); /* The dimmed light that flickers in the mystery's gaze */
+    content: "🐀 A caged rat, a witness to arcane whispers."; /* An observer in the tapestry of the unknown. */
+}
+
+/* The Enchanted Wizard Hat */
+.wizard-hat::before {
+    width: 120px;
+    height: 100px;
+    display: none;
+    background-color: #6C3483; /* The hue of ancient incantations */
+    border: 2px solid #721e56; /* The edge of secrets that spark the imagination */
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); /* Shadows that dance with whispered spells */
+    transform: translateX(-15px) rotate(-8deg); /* A twist in the fabric of reality */
+    content: "🧙‍♂️ An enchanted wizard hat, a conduit of mystical forces."; /* A portal to realms beyond comprehension. */
+}

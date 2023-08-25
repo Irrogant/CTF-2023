@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cauldron of Curiosities</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+    <audio id="ambience" loop>
+        <source src="/static/audio/Ambience.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="shop">
+
+        <div class="items">
+
+            <!-- The Enigma Bell -->
+            <button id="call-bell"></button>
+            <!-- NOT FOR SALE -->
+            <!-- An enigmatic bell that resonates with forgotten whispers. -->
+            <!-- Its tones stir hidden forces and open doors to veiled realms. -->
+            <!-- Attuned souls can decipher its call, unlocking secrets within. -->
+
+            <!-- Whispering shelves, guardians of secrets -->
+            <div class="shelf">
+                <!-- NOT FOR SALE -->
+                <!-- Ah, the enigmatic shelves stand like sentinels.
+                Their silence conceals tales of untold treasures,
+                Whispering secrets of artifacts and relics,
+                Yet their emptiness is a canvas for imagination to roam. -->
+            </div>
+
+            <!-- A lone candle's dance in the abyss -->
+            <div class="candle">
+                <!-- NOT FOR SALE -->
+                <!-- A solitary candle flickers in the abyss.
+                Its golden flames weave tales of journeys and destinies,
+                Casting shadows that beckon explorers to new realms,
+                And its light reveals pathways veiled by the dark's embrace. -->
+            </div>
+            
+            <!-- Mysteries concealed in a blue potion -->
+            <div class="blue-potion-large">
+                <!-- 69.90€ -->
+                <!-- A blue potion of grandeur, its depths hide wonders.
+                Within its cerulean shades are stories untold,
+                And its shimmering surface holds reflections of forgotten knowledge.
+                Will its magic aid in deciphering the puzzles? -->
+            </div>
+
+            <!-- Whispers of lust in a pink potion -->
+            <div class="pink-potion-large">
+                <!-- 40.20€ -->
+                <!-- A pink potion, a brew of whimsy and secrets.
+                Its delicate hue is a cloak for mysteries concealed,
+                And its gentle fragrance carries the essence of hidden enigmas.
+                Could it unveil the enigmatic paths to revelations? -->
+            </div>
+
+            <!-- A hint within the depths of a blue potion -->
+            <div class="blue-potion-small">
+                <!-- 12.34€ -->
+                <!-- A diminutive flask, azure potion of subtle hints.
+                In its depths lies a single drop of wisdom,
+                And its essence whispers riddles that beg to be unraveled.
+                Could it guide the seeker to the heart of the labyrinth? -->
+            </div>
+        
+            <!-- The Petite Mystery -->
+            <div class="pink-potion-small">
+                <!-- 13.37€ -->
+                <!-- A tiny vial, delicately pink and brimming with enigma.
+                Within its small confines lies the essence of curiosity,
+                A potion that invites you to take a sip, to unlock secrets untold.
+                Will it transport you to realms where puzzles unfold,
+                Where riddles intertwine like tendrils of a mystic vine? -->
+            </div>
+
+            <!-- The Caged Rat -->
+            <div class="caged-rat">
+                <!-- NOT FOR SALE -->
+                <!-- A caged rat, a humble yet observant presence.
+                In the maze of enigmas, it scurries, watching as secrets unfold.
+                Its whiskers twitch with anticipation, its eyes gleam with wisdom.
+                Dwelling behind the bars of mystery, concealed in headers,
+                It whimpers, whispering to the daring, tempting them to unravel its secrets.
+                Does it guard the key to treasure or reveal a path to a greater enigma?
+                Or is it just a riddle within the riddle, a mystery within the mystery?
+                Yet, spare it cheese, for this rat craves naught but the shadows. -->
+            </div>
+
+            <!-- The Enchanted Wizard Hat -->
+            <div class="wizard-hat"></div>
+                <!-- NOT FOR SALE -->
+                <!-- An enchanted wizard hat, a conduit of cosmic energies.
+                Perched atop the wise, it radiates with arcane knowledge,
+                A beacon in the realm of mysteries, a crown of the esoteric.
+                Does it channel the powers of ancient sorcery,
+                Or is it a vessel that beckons you to ascend to new dimensions? -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const music = document.getElementById("ambience");
+        const callBell = document.getElementById("call-bell");
+
+        callBell.addEventListener("click", () => {
+            music.play();
+        });
+    </script>
+
+</body>
+</html>
