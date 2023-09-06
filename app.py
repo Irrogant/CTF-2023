@@ -7,8 +7,6 @@ def index():
 
     content = render_template("frontend.html")
     response = make_response(content)
-
-    # Check which type of request it is:
     
     # Check value of cookie
     visitor = request.cookies.get("visitor")
@@ -27,7 +25,7 @@ def index():
         )
         return response
     
-    if visitor  and visitor.lower() == "rat":
+    if visitor and visitor.lower() == "rat":
         response.headers["Ancient-Rat-Rambles"] = (
         "The rat's eyes widen like twin moons, beholding a humongous being among its kind. "
         "It emits a triumphant sequence: 'chirp chirp chorp squeee.' The ancient echoes "
@@ -46,6 +44,5 @@ def index():
     # Set cookie to normal value
     response.set_cookie("visitor", value="human")
 
-   
 
     return response
