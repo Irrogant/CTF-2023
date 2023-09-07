@@ -6,7 +6,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #000000;
-    background-image: url("/static/images/Background.gif");
+    background-image: url("/elixirs/static/images/Background.gif");
     background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;
@@ -19,14 +19,14 @@ button {
     margin-top: -92px;
     background: transparent;
     border: none;
-    background-image: url("/static/images/Bell.png");
+    background-image: url("/elixirs/static/images/Bell.png");
 }
 
 .shop {
     position: relative;
     width: 1000px;
     height: 800px;
-    background-image: url("/static/images/Shop.gif");
+    background-image: url("/elixirs/static/images/Shop.gif");
 }
 
 .items {
