@@ -14,5 +14,6 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.elixirs.rule=PathPrefix(`/elixirs`)"
       - "traefik.http.routers.elixirs.entrypoints=http"
-      - "traefik.http.services.elixirs.port=8080"
+      - "traefik.http.services.elixirs.loadbalancer.server.port=8080"
       - "traefik.http.middlewares.elixirs.stripprefix.prefixes=/elixirs"
+      - "traefik.http.routers.elixirs.middlewares=elixirs@docker"
